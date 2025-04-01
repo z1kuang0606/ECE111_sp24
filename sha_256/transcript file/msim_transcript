@@ -1,0 +1,1716 @@
+# Reading pref.tcl
+# do simplified_sha256_run_msim_rtl_verilog.do
+# if ![file isdirectory verilog_libs] {
+# 	file mkdir verilog_libs
+# }
+# 
+# vlib verilog_libs/altera_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_ver".
+# vmap altera_ver ./verilog_libs/altera_ver
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap altera_ver ./verilog_libs/altera_ver 
+# Copying E:/Modelsim/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# vlog -vlog01compat -work altera_ver {e:/quartuslite/quartus/eda/sim_lib/altera_primitives.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:14:23 on Jun 08,2024
+# vlog -reportprogress 300 -vlog01compat -work altera_ver e:/quartuslite/quartus/eda/sim_lib/altera_primitives.v 
+# -- Compiling module global
+# -- Compiling module carry
+# -- Compiling module cascade
+# -- Compiling module carry_sum
+# -- Compiling module exp
+# -- Compiling module soft
+# -- Compiling module opndrn
+# -- Compiling module row_global
+# -- Compiling module TRI
+# -- Compiling module lut_input
+# -- Compiling module lut_output
+# -- Compiling module latch
+# -- Compiling module dlatch
+# -- Compiling module prim_gdff
+# -- Compiling module dff
+# -- Compiling module dffe
+# -- Compiling module dffea
+# -- Compiling module dffeas
+# -- Compiling module dffeas_pr
+# -- Compiling module prim_gtff
+# -- Compiling module tff
+# -- Compiling module tffe
+# -- Compiling module prim_gjkff
+# -- Compiling module jkff
+# -- Compiling module jkffe
+# -- Compiling module prim_gsrff
+# -- Compiling module srff
+# -- Compiling module srffe
+# -- Compiling module clklock
+# -- Compiling module alt_inbuf
+# -- Compiling module alt_outbuf
+# -- Compiling module alt_outbuf_tri
+# -- Compiling module alt_iobuf
+# -- Compiling module alt_inbuf_diff
+# -- Compiling module alt_outbuf_diff
+# -- Compiling module alt_outbuf_tri_diff
+# -- Compiling module alt_iobuf_diff
+# -- Compiling module alt_bidir_diff
+# -- Compiling module alt_bidir_buf
+# -- Compiling UDP PRIM_GDFF_LOW
+# -- Compiling UDP PRIM_GDFF_LOW_SCLR_PRIORITY
+# -- Compiling UDP PRIM_GDFF_HIGH
+# -- Compiling UDP PRIM_GDFF_HIGH_SCLR_PRIORITY
+# 
+# Top level modules:
+# 	global
+# 	carry
+# 	cascade
+# 	carry_sum
+# 	exp
+# 	soft
+# 	opndrn
+# 	row_global
+# 	TRI
+# 	lut_input
+# 	lut_output
+# 	latch
+# 	dlatch
+# 	dff
+# 	dffe
+# 	dffea
+# 	dffeas
+# 	dffeas_pr
+# 	tff
+# 	tffe
+# 	jkff
+# 	jkffe
+# 	srff
+# 	srffe
+# 	clklock
+# 	alt_inbuf
+# 	alt_outbuf
+# 	alt_outbuf_tri
+# 	alt_iobuf
+# 	alt_inbuf_diff
+# 	alt_outbuf_diff
+# 	alt_outbuf_tri_diff
+# 	alt_iobuf_diff
+# 	alt_bidir_diff
+# 	alt_bidir_buf
+# End time: 12:14:23 on Jun 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlib verilog_libs/lpm_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/lpm_ver".
+# vmap lpm_ver ./verilog_libs/lpm_ver
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap lpm_ver ./verilog_libs/lpm_ver 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work lpm_ver {e:/quartuslite/quartus/eda/sim_lib/220model.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:14:24 on Jun 08,2024
+# vlog -reportprogress 300 -vlog01compat -work lpm_ver e:/quartuslite/quartus/eda/sim_lib/220model.v 
+# -- Compiling module LPM_MEMORY_INITIALIZATION
+# -- Compiling module LPM_HINT_EVALUATION
+# -- Compiling module LPM_DEVICE_FAMILIES
+# -- Compiling module lpm_constant
+# -- Compiling module lpm_inv
+# -- Compiling module lpm_and
+# -- Compiling module lpm_or
+# -- Compiling module lpm_xor
+# -- Compiling module lpm_bustri
+# -- Compiling module lpm_mux
+# -- Compiling module lpm_decode
+# -- Compiling module lpm_clshift
+# -- Compiling module lpm_add_sub
+# -- Compiling module lpm_compare
+# -- Compiling module lpm_mult
+# -- Compiling module lpm_divide
+# -- Compiling module lpm_abs
+# -- Compiling module lpm_counter
+# -- Compiling module lpm_latch
+# -- Compiling module lpm_ff
+# -- Compiling module lpm_shiftreg
+# -- Compiling module lpm_ram_dq
+# -- Compiling module lpm_ram_dp
+# -- Compiling module lpm_ram_io
+# -- Compiling module lpm_rom
+# -- Compiling module lpm_fifo
+# -- Compiling module lpm_fifo_dc_dffpipe
+# -- Compiling module lpm_fifo_dc_fefifo
+# -- Compiling module lpm_fifo_dc_async
+# -- Compiling module lpm_fifo_dc
+# -- Compiling module lpm_inpad
+# -- Compiling module lpm_outpad
+# -- Compiling module lpm_bipad
+# 
+# Top level modules:
+# 	lpm_constant
+# 	lpm_inv
+# 	lpm_and
+# 	lpm_or
+# 	lpm_xor
+# 	lpm_bustri
+# 	lpm_mux
+# 	lpm_decode
+# 	lpm_clshift
+# 	lpm_add_sub
+# 	lpm_compare
+# 	lpm_mult
+# 	lpm_divide
+# 	lpm_abs
+# 	lpm_counter
+# 	lpm_latch
+# 	lpm_ff
+# 	lpm_shiftreg
+# 	lpm_ram_dq
+# 	lpm_ram_dp
+# 	lpm_ram_io
+# 	lpm_rom
+# 	lpm_fifo
+# 	lpm_fifo_dc
+# 	lpm_inpad
+# 	lpm_outpad
+# 	lpm_bipad
+# End time: 12:14:24 on Jun 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlib verilog_libs/sgate_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/sgate_ver".
+# vmap sgate_ver ./verilog_libs/sgate_ver
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap sgate_ver ./verilog_libs/sgate_ver 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work sgate_ver {e:/quartuslite/quartus/eda/sim_lib/sgate.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:14:24 on Jun 08,2024
+# vlog -reportprogress 300 -vlog01compat -work sgate_ver e:/quartuslite/quartus/eda/sim_lib/sgate.v 
+# -- Compiling module oper_add
+# -- Compiling module oper_addsub
+# -- Compiling module mux21
+# -- Compiling module io_buf_tri
+# -- Compiling module io_buf_opdrn
+# -- Compiling module oper_mult
+# -- Compiling module tri_bus
+# -- Compiling module oper_div
+# -- Compiling module oper_mod
+# -- Compiling module oper_left_shift
+# -- Compiling module oper_right_shift
+# -- Compiling module oper_rotate_left
+# -- Compiling module oper_rotate_right
+# -- Compiling module oper_less_than
+# -- Compiling module oper_mux
+# -- Compiling module oper_selector
+# -- Compiling module oper_decoder
+# -- Compiling module oper_bus_mux
+# -- Compiling module oper_latch
+# 
+# Top level modules:
+# 	oper_add
+# 	oper_addsub
+# 	mux21
+# 	io_buf_tri
+# 	io_buf_opdrn
+# 	oper_mult
+# 	tri_bus
+# 	oper_div
+# 	oper_mod
+# 	oper_left_shift
+# 	oper_right_shift
+# 	oper_rotate_left
+# 	oper_rotate_right
+# 	oper_less_than
+# 	oper_mux
+# 	oper_selector
+# 	oper_decoder
+# 	oper_bus_mux
+# 	oper_latch
+# End time: 12:14:25 on Jun 08,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlib verilog_libs/altera_mf_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_mf_ver".
+# vmap altera_mf_ver ./verilog_libs/altera_mf_ver
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap altera_mf_ver ./verilog_libs/altera_mf_ver 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work altera_mf_ver {e:/quartuslite/quartus/eda/sim_lib/altera_mf.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:14:25 on Jun 08,2024
+# vlog -reportprogress 300 -vlog01compat -work altera_mf_ver e:/quartuslite/quartus/eda/sim_lib/altera_mf.v 
+# -- Compiling module lcell
+# -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
+# -- Compiling module ALTERA_MF_HINT_EVALUATION
+# -- Compiling module ALTERA_DEVICE_FAMILIES
+# -- Compiling module dffp
+# -- Compiling module pll_iobuf
+# -- Compiling module stx_m_cntr
+# -- Compiling module stx_n_cntr
+# -- Compiling module stx_scale_cntr
+# -- Compiling module MF_pll_reg
+# -- Compiling module MF_stratix_pll
+# -- Compiling module arm_m_cntr
+# -- Compiling module arm_n_cntr
+# -- Compiling module arm_scale_cntr
+# -- Compiling module MF_stratixii_pll
+# -- Compiling module ttn_m_cntr
+# -- Compiling module ttn_n_cntr
+# -- Compiling module ttn_scale_cntr
+# -- Compiling module MF_stratixiii_pll
+# -- Compiling module cda_m_cntr
+# -- Compiling module cda_n_cntr
+# -- Compiling module cda_scale_cntr
+# -- Compiling module MF_cycloneiii_pll
+# -- Compiling module MF_cycloneiiigl_m_cntr
+# -- Compiling module MF_cycloneiiigl_n_cntr
+# -- Compiling module MF_cycloneiiigl_scale_cntr
+# -- Compiling module cycloneiiigl_post_divider
+# -- Compiling module MF_cycloneiiigl_pll
+# -- Compiling module altpll
+# -- Compiling module altlvds_rx
+# -- Compiling module stratix_lvds_rx
+# -- Compiling module stratixgx_dpa_lvds_rx
+# -- Compiling module stratixii_lvds_rx
+# -- Compiling module flexible_lvds_rx
+# -- Compiling module stratixiii_lvds_rx
+# -- Compiling module stratixiii_lvds_rx_channel
+# -- Compiling module stratixiii_lvds_rx_dpa
+# -- Compiling module altlvds_tx
+# -- Compiling module stratixv_local_clk_divider
+# -- Compiling module stratix_tx_outclk
+# -- Compiling module stratixii_tx_outclk
+# -- Compiling module flexible_lvds_tx
+# -- Compiling module dcfifo_dffpipe
+# -- Compiling module dcfifo_fefifo
+# -- Compiling module dcfifo_async
+# -- Compiling module dcfifo_sync
+# -- Compiling module dcfifo_low_latency
+# -- Compiling module dcfifo_mixed_widths
+# -- Compiling module dcfifo
+# -- Compiling module altera_syncram_derived
+# -- Compiling module altera_syncram_derived_forwarding_logic
+# -- Compiling module altaccumulate
+# -- Compiling module altmult_accum
+# -- Compiling module altmult_add
+# -- Compiling module altfp_mult
+# -- Compiling module altsqrt
+# -- Compiling module altclklock
+# -- Compiling module altddio_in
+# -- Compiling module altddio_out
+# -- Compiling module altddio_bidir
+# -- Compiling module altdpram
+# -- Compiling module altsyncram
+# -- Compiling module altsyncram_body
+# -- Compiling module alt3pram
+# -- Compiling module parallel_add
+# -- Compiling module scfifo
+# -- Compiling module altshift_taps
+# -- Compiling module a_graycounter
+# -- Compiling module altsquare
+# -- Compiling module altera_std_synchronizer
+# -- Compiling module altera_std_synchronizer_bundle
+# -- Compiling module alt_cal
+# -- Compiling module alt_cal_mm
+# -- Compiling module alt_cal_c3gxb
+# -- Compiling module alt_cal_sv
+# -- Compiling module alt_cal_av
+# -- Compiling module alt_aeq_s4
+# -- Compiling module alt_eyemon
+# -- Compiling module alt_dfe
+# -- Compiling module signal_gen
+# -- Compiling module jtag_tap_controller
+# -- Compiling module dummy_hub
+# -- Compiling module sld_virtual_jtag
+# -- Compiling module sld_signaltap
+# -- Compiling module altstratixii_oct
+# -- Compiling module altparallel_flash_loader
+# -- Compiling module altserial_flash_loader
+# -- Compiling module alt_fault_injection
+# -- Compiling module sld_virtual_jtag_basic
+# -- Compiling module altsource_probe
+# 
+# Top level modules:
+# 	lcell
+# 	altpll
+# 	altlvds_rx
+# 	altlvds_tx
+# 	dcfifo
+# 	altaccumulate
+# 	altmult_accum
+# 	altmult_add
+# 	altfp_mult
+# 	altsqrt
+# 	altclklock
+# 	altddio_bidir
+# 	altdpram
+# 	alt3pram
+# 	parallel_add
+# 	scfifo
+# 	altshift_taps
+# 	a_graycounter
+# 	altsquare
+# 	altera_std_synchronizer_bundle
+# 	alt_cal
+# 	alt_cal_mm
+# 	alt_cal_c3gxb
+# 	alt_cal_sv
+# 	alt_cal_av
+# 	alt_aeq_s4
+# 	alt_eyemon
+# 	alt_dfe
+# 	sld_virtual_jtag
+# 	sld_signaltap
+# 	altstratixii_oct
+# 	altparallel_flash_loader
+# 	altserial_flash_loader
+# 	alt_fault_injection
+# 	sld_virtual_jtag_basic
+# 	altsource_probe
+# End time: 12:14:27 on Jun 08,2024, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# 
+# vlib verilog_libs/altera_lnsim_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_lnsim_ver".
+# vmap altera_lnsim_ver ./verilog_libs/altera_lnsim_ver
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap altera_lnsim_ver ./verilog_libs/altera_lnsim_ver 
+# Modifying modelsim.ini
+# vlog -sv -work altera_lnsim_ver {e:/quartuslite/quartus/eda/sim_lib/altera_lnsim.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:14:27 on Jun 08,2024
+# vlog -reportprogress 300 -sv -work altera_lnsim_ver e:/quartuslite/quartus/eda/sim_lib/altera_lnsim.sv 
+# -- Compiling package altera_lnsim_functions
+# -- Compiling package altera_generic_pll_functions
+# -- Compiling module generic_pll
+# -- Importing package altera_lnsim_functions
+# -- Importing package altera_generic_pll_functions
+# -- Compiling module generic_cdr
+# -- Compiling module common_28nm_ram_pulse_generator
+# -- Compiling module common_28nm_ram_register
+# -- Compiling module common_28nm_ram_block
+# -- Compiling module generic_m20k
+# -- Compiling module generic_m10k
+# -- Compiling module common_28nm_mlab_cell_pulse_generator
+# -- Compiling module common_28nm_mlab_latch
+# -- Compiling module common_28nm_mlab_cell_core
+# -- Compiling module common_porta_latches
+# -- Compiling module generic_28nm_hp_mlab_cell_impl
+# -- Compiling module common_porta_registers
+# -- Compiling module generic_28nm_lc_mlab_cell_impl
+# -- Compiling module common_28nm_lutram_register
+# -- Compiling module generic_14nm_mlab_cell_impl
+# -- Compiling module common_14nm_lutram_register
+# -- Compiling module generic_mux
+# -- Compiling module generic_device_pll
+# -- Compiling module altera_mult_add
+# -- Compiling module altera_mult_add_rtl
+# -- Compiling module ama_signed_extension_function
+# -- Compiling module ama_dynamic_signed_function
+# -- Compiling module ama_register_function
+# -- Compiling module ama_register_with_ext_function
+# -- Compiling module ama_data_split_reg_ext_function
+# -- Compiling module ama_coef_reg_ext_function
+# -- Compiling module ama_adder_function
+# -- Compiling module ama_multiplier_function
+# -- Compiling module ama_preadder_function
+# -- Compiling module ama_chainout_adder_accumulator_function
+# -- Compiling module ama_systolic_adder_function
+# -- Compiling module ama_scanchain
+# -- Compiling module ama_latency_function
+# -- Compiling module altera_pll_reconfig_tasks
+# -- Compiling module altera_syncram
+# -- Compiling module altera_syncram_forwarding_logic
+# -- Compiling module ALTERA_LNSIM_MEMORY_INITIALIZATION
+# -- Compiling module altera_stratixv_pll
+# -- Compiling module altera_arriav_pll
+# -- Compiling module altera_arriavgz_pll
+# -- Compiling module altera_cyclonev_pll
+# -- Compiling module altera_pll
+# -- Compiling module dps_extra_kick
+# -- Compiling module dprio_init
+# -- Compiling module dps_pulse_gen
+# -- Compiling module altera_iopll
+# -- Compiling module dps_pulse_gen_iopll
+# -- Compiling module twentynm_iopll_arlol
+# -- Compiling module fourteennm_altera_iopll
+# -- Compiling module dps_pulse_gen_fourteennm_iopll
+# -- Compiling package fourteennm_iopll_functions
+# -- Compiling module fourteennm_simple_iopll
+# -- Importing package fourteennm_iopll_functions
+# -- Compiling module fourteennm_sub_iopll
+# -- Compiling module twentynm_iopll_ip
+# -- Compiling module altera_iopll_rotation_lcells
+# -- Compiling module altera_pll_dps_lcell_comb
+# -- Compiling module iopll_bootstrap
+# 
+# Top level modules:
+# 	generic_cdr
+# 	generic_m20k
+# 	generic_m10k
+# 	common_porta_latches
+# 	generic_28nm_hp_mlab_cell_impl
+# 	generic_28nm_lc_mlab_cell_impl
+# 	generic_14nm_mlab_cell_impl
+# 	generic_mux
+# 	generic_device_pll
+# 	altera_mult_add
+# 	altera_pll_reconfig_tasks
+# 	altera_syncram
+# 	altera_pll
+# 	altera_iopll
+# 	fourteennm_altera_iopll
+# 	fourteennm_simple_iopll
+# End time: 12:14:29 on Jun 08,2024, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# 
+# vlib verilog_libs/arriaii_hssi_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/arriaii_hssi_ver".
+# vmap arriaii_hssi_ver ./verilog_libs/arriaii_hssi_ver
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap arriaii_hssi_ver ./verilog_libs/arriaii_hssi_ver 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work arriaii_hssi_ver {e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:14:29 on Jun 08,2024
+# vlog -reportprogress 300 -vlog01compat -work arriaii_hssi_ver e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v 
+# -- Compiling module arriaii_hssi_aux_clock_div
+# -- Compiling module arriaii_hssi_aux_clock_mult
+# -- Compiling module arriaii_hssi_pma_c_divby2q
+# -- Compiling module arriaii_hssi_pma_c_controller_4t16
+# -- Compiling module arriaii_hssi_pma_c_clkgendrv
+# -- Compiling module arriaii_hssi_pma_c_clkgenbuf
+# -- Compiling module arriaii_hssi_pma_c_clkgenbuf_cmu
+# -- Compiling module arriaii_hssi_pma_c_d2a_mbpass
+# -- Compiling module arriaii_hssi_pma_c_tx_clkmux_cmu
+# -- Compiling module arriaii_hssi_pma_c_deser_pcie
+# -- Compiling module arriaii_hssi_pma_c_deser_10to20
+# -- Compiling module arriaii_hssi_pma_c_deser_ff_chain
+# -- Compiling module arriaii_hssi_pma_c_deser_fsd_rst
+# -- Compiling module arriaii_hssi_pma_c_deser
+# -- Compiling module arriaii_hssi_pma_c_div4or5_mcnt
+# -- Compiling module arriaii_hssi_pma_c_lockdet_tx18
+# -- Compiling module arriaii_hssi_pma_c_pfd
+# -- Compiling module arriaii_hssi_pma_c_rlpbk_ctrl
+# -- Compiling module arriaii_hssi_pma_c_rlpbk_mux
+# -- Compiling module arriaii_hssi_pma_c_rx
+# -- Compiling module arriaii_hssi_pma_c_ser_20to10
+# -- Compiling module arriaii_hssi_pma_c_ser
+# -- Compiling module arriaii_hssi_pma_c_sdl_en_2x
+# -- Compiling module arriaii_hssi_pma_c_rcv_detect_div_by_2
+# -- Compiling module arriaii_hssi_pma_c_rcv_detect_clk_gen
+# -- Compiling module arriaii_hssi_pma_c_rcv_detect_sync
+# -- Compiling module arriaii_hssi_pma_c_rcv_detect_fsm
+# -- Compiling module arriaii_hssi_pma_c_rcv_detect_control
+# -- Compiling module arriaii_hssi_pma_c_rcv_det_digital
+# -- Compiling module arriaii_hssi_pma_c_rcv_detect
+# -- Compiling module arriaii_hssi_pma_c_tx
+# -- Compiling module arriaii_hssi_pma_ppmdetect
+# -- Compiling module arriaii_hssi_pma_c_ser_10g
+# -- Compiling module arriaii_hssi_pma_c_deser_10g
+# -- Compiling module arriaii_hssi_pma_c_pcie_sw
+# -- Compiling module arriaii_hssi_pma_c_clkgendrv_tx10g
+# -- Compiling module arriaii_hssi_pma_c_clkgenbuf_tx10g
+# -- Compiling module arriaii_hssi_clock_divider
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4497): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4498): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4499): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4500): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4501): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4503): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4505): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4506): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4507): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4508): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4509): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4510): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4511): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4515): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4517): Carriage return (0x0D) is not followed by a newline (0x0A).
+# -- Compiling module arriaii_hssi_pll
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4542): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4544): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4546): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4547): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4569): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4573): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4574): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4596): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4598): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4651): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4653): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4659): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4661): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4663): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4664): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4666): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4668): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4669): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4670): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4673): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4674): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4675): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4677): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4695): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4713): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4731): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4749): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4752): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4758): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4759): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4760): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4762): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4772): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4782): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4796): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4802): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4811): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4812): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4813): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4815): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4825): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4835): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4849): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4855): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4860): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4861): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4862): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4864): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4874): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4884): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4898): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4904): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4911): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4924): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4925): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4926): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4928): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4938): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4948): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4962): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4968): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4972): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4973): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4974): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4976): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4986): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(4996): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5010): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5016): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5019): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5020): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5021): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5023): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5033): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5043): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5057): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5063): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5067): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5070): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5072): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5078): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5079): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5080): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5086): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5087): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5088): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5090): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5108): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5109): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5110): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5131): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5138): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5150): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5151): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5184): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5200): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5232): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5243): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5258): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5260): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5276): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5299): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5305): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5328): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5334): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5344): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5382): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5391): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5448): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5457): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5488): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5495): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5503): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_hssi_atoms.v(5566): Carriage return (0x0D) is not followed by a newline (0x0A).
+# -- Compiling module arriaii_hssi_tx_pma
+# -- Compiling module arriaii_hssi_rx_pma
+# -- Compiling module arriaii_hssi_pcs_reset
+# -- Compiling module arriaii_hssi_digi_chnl_hip_spt
+# -- Compiling module arriaii_hssi_phystatus_generator_fsm
+# -- Compiling module arriaii_hssi_phystatus_generator
+# -- Compiling module arriaii_hssi_rx_pipe_interface
+# -- Compiling module arriaii_hssi_tx_pipe_interface
+# -- Compiling module arriaii_hssi_q_pipe_interface_top
+# -- Compiling module arriaii_hssi_tx_digis_txclk_gating
+# -- Compiling module arriaii_hssi_tx_digi_txclk_ctl
+# -- Compiling module arriaii_hssi_tx_digis_ram8x49_syn
+# -- Compiling module arriaii_hssi_tx_digis_ph_fifo
+# -- Compiling module arriaii_hssi_tx_digi_tx_ctrl
+# -- Compiling module arriaii_hssi_tx_digi_bist_gen
+# -- Compiling module arriaii_hssi_tx_digi_prbs_gen
+# -- Compiling module arriaii_hssi_tx_digi_enc_chnl_top
+# -- Compiling module arriaii_hssi_tx_digi_iq_pipe_tx
+# -- Compiling module arriaii_hssi_tx_digi
+# -- Compiling module arriaii_hssi_tx_pcs
+# -- Compiling module arriaii_hssi_rx_digis_ph_fifo
+# -- Compiling module arriaii_hssi_rx_digis_ram16x14_syn
+# -- Compiling module arriaii_hssi_rx_digis_ram20x16_syn
+# -- Compiling module arriaii_hssi_rx_digis_ram8x70_syn
+# -- Compiling module arriaii_hssi_rx_digis_rxclk_gating
+# -- Compiling module arriaii_hssi_rx_digi_rxclk_ctl
+# -- Compiling module arriaii_hssi_rx_digi_auto_speed_neg
+# -- Compiling module arriaii_hssi_rx_digi_bist_ver
+# -- Compiling module arriaii_hssi_rx_digi_cdr_ctrl
+# -- Compiling module arriaii_hssi_rx_digi_comp_chnl_top
+# -- Compiling module arriaii_hssi_rx_digi_rx_ctrl
+# -- Compiling module arriaii_hssi_rx_digi_dec_chnl_top
+# -- Compiling module arriaii_hssi_rx_digi_dskw_fifo
+# -- Compiling module arriaii_hssi_rx_digi_freqdet
+# -- Compiling module arriaii_hssi_rx_digi_eii_module
+# -- Compiling module arriaii_hssi_rx_digi_pcs_channel_testbus
+# -- Compiling module arriaii_hssi_rx_digi_iq_pipe_rx
+# -- Compiling module arriaii_hssi_rx_digi_prbs_ver
+# -- Compiling module arriaii_hssi_rx_digi_wordalign
+# -- Compiling module arriaii_hssi_rx_digi
+# -- Compiling module arriaii_hssi_rx_pcs
+# -- Compiling module arriaii_hssi_dskw_sm
+# -- Compiling module arriaii_hssi_tx_sm
+# -- Compiling module arriaii_hssi_rcv_sm
+# -- Compiling module arriaii_hssi_cmu_chnl_reset
+# -- Compiling module arriaii_hssi_cmu_quad_reset
+# -- Compiling module arriaii_hssi_cmu_auto_speed_neg
+# -- Compiling module arriaii_hssi_cmu_clk_gating
+# -- Compiling module arriaii_hssi_cmu_clk_ctl
+# -- Compiling module arriaii_hssi_cmu_rx_ctrl
+# -- Compiling module arriaii_hssi_cmu_rxclk_gating
+# -- Compiling module arriaii_hssi_cmu_rxclk_ctl
+# -- Compiling module arriaii_hssi_cmu_tx_ctrl
+# -- Compiling module arriaii_hssi_cmu_txclk_gating
+# -- Compiling module arriaii_hssi_cmu_txclk_ctl
+# -- Compiling module arriaii_hssi_cmu_dprio_bit
+# -- Compiling module arriaii_hssi_cmu_dprio_bit_pma
+# -- Compiling module arriaii_hssi_cmu_dprio_16bit
+# -- Compiling module arriaii_hssi_cmu_dprio_16bit_pma
+# -- Compiling module arriaii_hssi_cmu_dprio_reg_chnl
+# -- Compiling module arriaii_hssi_cmu_dprio_chnl_bus_out_mux
+# -- Compiling module arriaii_hssi_cmu_dprio_chnl_top
+# -- Compiling module arriaii_hssi_cmu_dprio_status
+# -- Compiling module arriaii_hssi_cmu_dprio_addr
+# -- Compiling module arriaii_hssi_cmu_dprio_cnt
+# -- Compiling module arriaii_hssi_cmu_dprio_ctl_data
+# -- Compiling module arriaii_hssi_cmu_dprio_sm
+# -- Compiling module arriaii_hssi_cmu_dprio_reg_centrl
+# -- Compiling module arriaii_hssi_cmu_dprio_centrl_bus_out_mux
+# -- Compiling module arriaii_hssi_cmu_dprio_centrl_top
+# -- Compiling module arriaii_hssi_cmu_dprio_map_index
+# -- Compiling module arriaii_hssi_cmu_dprio_map
+# -- Compiling module arriaii_hssi_cmu_dprio_top
+# -- Compiling module arriaii_hssi_cmu
+# -- Compiling module arriaii_hssi_calibration_block
+# -- Compiling module arriaii_hssi_refclk_divider
+# -- Compiling module arriaii_hssi_pma_c_adce
+# 
+# Top level modules:
+# 	arriaii_hssi_pma_c_d2a_mbpass
+# 	arriaii_hssi_pma_c_div4or5_mcnt
+# 	arriaii_hssi_pma_c_lockdet_tx18
+# 	arriaii_hssi_pma_c_pfd
+# 	arriaii_hssi_pma_c_rlpbk_ctrl
+# 	arriaii_hssi_pma_c_sdl_en_2x
+# 	arriaii_hssi_clock_divider
+# 	arriaii_hssi_pll
+# 	arriaii_hssi_tx_pma
+# 	arriaii_hssi_rx_pma
+# 	arriaii_hssi_tx_pcs
+# 	arriaii_hssi_rx_pcs
+# 	arriaii_hssi_cmu
+# 	arriaii_hssi_calibration_block
+# 	arriaii_hssi_refclk_divider
+# End time: 12:14:32 on Jun 08,2024, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 129
+# 
+# vlib verilog_libs/arriaii_pcie_hip_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/arriaii_pcie_hip_ver".
+# vmap arriaii_pcie_hip_ver ./verilog_libs/arriaii_pcie_hip_ver
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap arriaii_pcie_hip_ver ./verilog_libs/arriaii_pcie_hip_ver 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work arriaii_pcie_hip_ver {e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:14:32 on Jun 08,2024
+# vlog -reportprogress 300 -vlog01compat -work arriaii_pcie_hip_ver e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v 
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(28): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(29): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(30): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(31): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(32): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(33): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(34): Carriage return (0x0D) is not followed by a newline (0x0A).
+# -- Compiling module arriaii_pciehip_param
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(46): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(47): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(48): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(52): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(55): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(98): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(125): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(127): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(128): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(129): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(130): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(131): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(227): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(228): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(229): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(232): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(233): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(234): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(235): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(236): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(237): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(240): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(245): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(246): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(247): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(248): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(250): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(255): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(260): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(263): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(266): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(267): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(269): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(270): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(280): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(281): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(282): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(283): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(285): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(286): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(287): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(288): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(289): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(291): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(295): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(308): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(309): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(310): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(312): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(317): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(322): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(327): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(334): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(337): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(352): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(353): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(359): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(360): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(362): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(363): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(374): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(375): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(376): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(489): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(490): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(491): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(493): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(503): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(504): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(507): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(509): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(521): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(557): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(559): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(570): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(571): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(572): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(573): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(574): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(575): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(578): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(579): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(580): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(582): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(584): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(597): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(609): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(654): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(656): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(669): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(672): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(677): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(679): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(694): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(702): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(721): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(722): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(725): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(731): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(785): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(800): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(801): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(802): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(803): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(804): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(806): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(807): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(808): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(809): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(810): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(812): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(813): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(820): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(821): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(822): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(823): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(824): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(826): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(827): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(829): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(830): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(831): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(833): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(834): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(841): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(842): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(843): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(844): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(845): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(847): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(848): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(850): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(851): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(852): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(854): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(855): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(875): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(885): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(891): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(892): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(895): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(897): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(901): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(902): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(903): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(905): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(910): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(927): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(928): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(953): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(954): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(955): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(964): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(965): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(972): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(982): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(989): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(1078): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(1081): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(1096): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(1097): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(1098): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) e:/quartuslite/quartus/eda/sim_lib/arriaii_pcie_hip_atoms.v(1213): Carriage return (0x0D) is not followed by a newline (0x0A).
+# -- Compiling module arriaii_pciehip_clkmux
+# -- Compiling module arriaii_pciehip_dprio_bit
+# -- Compiling module arriaii_pciehip_dprio_16bit
+# -- Compiling module arriaii_pciehip_dprio_addr
+# -- Compiling module arriaii_pciehip_dprio_cnt
+# -- Compiling module arriaii_pciehip_dprio_ctl_data
+# -- Compiling module arriaii_pciehip_dprio_sm
+# -- Compiling module arriaii_pciehip_dprio_bus_out_mux
+# -- Compiling module arriaii_pciehip_dprio_reg
+# -- Compiling module arriaii_pciehip_dprio_reg_top
+# -- Compiling module arriaii_pciehip_hip_dprio_top
+# -- Compiling module arriaii_pciehip_compute_bit
+# -- Compiling module arriaii_pciehip_ecc_gen
+# -- Compiling module arriaii_pciehip_ecc_chk
+# -- Compiling module arriaii_pciehip_ecc_decoder
+# -- Compiling module arriaii_pciehip_pulse_ext
+# -- Compiling module arriaii_pciehip_hip_mram
+# -- Compiling module arriaii_pciehip_mram_top
+# -- Compiling module arriaii_pciehip_pciexp_dcfiforam
+# -- Compiling module arriaii_pciehip_pciexp_dcram_rtry
+# -- Compiling module arriaii_pciehip_pciexp_dcram_rxvc
+# -- Compiling module arriaii_pciehip_iei_detect
+# -- Compiling module arriaii_pciehip_pciexp_top_hip
+# -- Compiling module arriaii_pciehip_hip_top
+# -- Compiling module arriaii_hssi_pcie_hip
+# 
+# Top level modules:
+# 	arriaii_hssi_pcie_hip
+# End time: 12:14:39 on Jun 08,2024, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 170
+# 
+# vlib verilog_libs/arriaii_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/arriaii_ver".
+# vmap arriaii_ver ./verilog_libs/arriaii_ver
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap arriaii_ver ./verilog_libs/arriaii_ver 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work arriaii_ver {e:/quartuslite/quartus/eda/sim_lib/arriaii_atoms.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:14:39 on Jun 08,2024
+# vlog -reportprogress 300 -vlog01compat -work arriaii_ver e:/quartuslite/quartus/eda/sim_lib/arriaii_atoms.v 
+# -- Compiling UDP ARRIAII_PRIM_DFFE
+# -- Compiling UDP ARRIAII_PRIM_DFFEAS
+# -- Compiling UDP ARRIAII_PRIM_DFFEAS_HIGH
+# -- Compiling module arriaii_dffe
+# -- Compiling module arriaii_mux21
+# -- Compiling module arriaii_mux41
+# -- Compiling module arriaii_and1
+# -- Compiling module arriaii_and16
+# -- Compiling module arriaii_bmux21
+# -- Compiling module arriaii_b17mux21
+# -- Compiling module arriaii_nmux21
+# -- Compiling module arriaii_b5mux21
+# -- Compiling module arriaii_lcell_comb
+# -- Compiling module arriaii_routing_wire
+# -- Compiling module arriaii_lvds_tx_reg
+# -- Compiling module arriaii_lvds_tx_parallel_register
+# -- Compiling module arriaii_lvds_tx_out_block
+# -- Compiling module arriaii_lvds_transmitter
+# -- Compiling module arriaii_rublock
+# -- Compiling module arriaii_oscillator
+# -- Compiling module arriaii_ram_pulse_generator
+# -- Compiling module arriaii_ram_register
+# -- Compiling module arriaii_ram_block
+# -- Compiling module arriaii_ff
+# -- Compiling module arriaii_clkselect
+# -- Compiling module arriaii_and2
+# -- Compiling module arriaii_ena_reg
+# -- Compiling module arriaii_clkena
+# -- Compiling module arriaii_mlab_cell_pulse_generator
+# -- Compiling module arriaii_mlab_cell
+# -- Compiling module arriaii_io_ibuf
+# -- Compiling module arriaii_io_obuf
+# -- Compiling module arriaii_ddio_out
+# -- Compiling module arriaii_ddio_oe
+# -- Compiling module arriaii_ddio_in
+# -- Compiling module arriaii_mac_register
+# -- Compiling module arriaii_mac_multiplier
+# -- Compiling module arriaii_mac_mult
+# -- Compiling module arriaii_fsa_isse
+# -- Compiling module arriaii_first_stage_add_sub
+# -- Compiling module arriaii_second_stage_add_accum
+# -- Compiling module arriaii_round_block
+# -- Compiling module arriaii_saturate_block
+# -- Compiling module arriaii_round_saturate_block
+# -- Compiling module arriaii_rotate_shift_block
+# -- Compiling module arriaii_carry_chain_adder
+# -- Compiling module arriaii_mac_out
+# -- Compiling module arriaii_ddr_gray_decoder
+# -- Compiling module arriaii_ddr_delay_chain_s
+# -- Compiling module arriaii_ddr_io_reg
+# -- Compiling module arriaii_dll
+# -- Compiling module arriaii_dll_offset_ctrl
+# -- Compiling module arriaii_dqs_enable
+# -- Compiling module arriaii_io_pad
+# -- Compiling module arriaii_m_cntr
+# -- Compiling module arriaii_n_cntr
+# -- Compiling module arriaii_scale_cntr
+# -- Compiling module arriaii_pll_reg
+# -- Compiling module arriaii_pll
+# -- Compiling module arriaii_asmiblock
+# -- Compiling module arriaii_lvds_rx_fifo_sync_ram
+# -- Compiling module arriaii_lvds_rx_fifo
+# -- Compiling module arriaii_lvds_rx_bitslip
+# -- Compiling module arriaii_lvds_rx_deser
+# -- Compiling module arriaii_lvds_rx_parallel_reg
+# -- Compiling module arriaii_lvds_reg
+# -- Compiling module arriaii_pclk_divider
+# -- Compiling module arriaii_select_ini_phase_dpaclk
+# -- Compiling module arriaii_dpa_retime_block
+# -- Compiling module arriaii_dpa_block
+# -- Compiling module arriaii_lvds_receiver
+# -- Compiling module arriaii_pseudo_diff_out
+# -- Compiling module arriaii_dqs_delay_chain
+# -- Compiling module arriaii_dqs_enable_ctrl
+# -- Compiling module arriaii_jtag
+# -- Compiling module arriaii_crcblock
+# -- Compiling module arriaii_controller
+# -- Compiling module arriaii_termination_logic
+# -- Compiling module arriaii_termination
+# 
+# Top level modules:
+# 	arriaii_dffe
+# 	arriaii_and1
+# 	arriaii_and16
+# 	arriaii_bmux21
+# 	arriaii_b17mux21
+# 	arriaii_nmux21
+# 	arriaii_b5mux21
+# 	arriaii_lcell_comb
+# 	arriaii_routing_wire
+# 	arriaii_lvds_transmitter
+# 	arriaii_rublock
+# 	arriaii_oscillator
+# 	arriaii_ram_block
+# 	arriaii_ff
+# 	arriaii_clkselect
+# 	arriaii_clkena
+# 	arriaii_mlab_cell
+# 	arriaii_io_ibuf
+# 	arriaii_io_obuf
+# 	arriaii_ddio_out
+# 	arriaii_ddio_oe
+# 	arriaii_ddio_in
+# 	arriaii_mac_mult
+# 	arriaii_mac_out
+# 	arriaii_ddr_delay_chain_s
+# 	arriaii_ddr_io_reg
+# 	arriaii_dll
+# 	arriaii_dll_offset_ctrl
+# 	arriaii_dqs_enable
+# 	arriaii_io_pad
+# 	arriaii_pll_reg
+# 	arriaii_pll
+# 	arriaii_asmiblock
+# 	arriaii_lvds_receiver
+# 	arriaii_pseudo_diff_out
+# 	arriaii_dqs_delay_chain
+# 	arriaii_dqs_enable_ctrl
+# 	arriaii_jtag
+# 	arriaii_crcblock
+# 	arriaii_controller
+# 	arriaii_termination_logic
+# 	arriaii_termination
+# End time: 12:14:40 on Jun 08,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1 {E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/simplified_sha256_opt7.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:14:40 on Jun 08,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1" E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/simplified_sha256_opt7.sv 
+# -- Compiling module simplified_sha256_opt7
+# 
+# Top level modules:
+# 	simplified_sha256_opt7
+# End time: 12:14:40 on Jun 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1 {E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/tb_simplified_sha256.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:14:41 on Jun 08,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1" E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/tb_simplified_sha256.sv 
+# -- Compiling module tb_simplified_sha256
+# 
+# Top level modules:
+# 	tb_simplified_sha256
+# End time: 12:14:41 on Jun 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L arriaii_hssi_ver -L arriaii_pcie_hip_ver -L arriaii_ver -L rtl_work -L work -voptargs="+acc"  tb_simplified_sha256
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L arriaii_hssi_ver -L arriaii_pcie_hip_ver -L arriaii_ver -L rtl_work -L work -voptargs=""+acc"" tb_simplified_sha256 
+# Start time: 12:14:41 on Jun 08,2024
+# Loading sv_std.std
+# Loading work.tb_simplified_sha256
+# Loading work.simplified_sha256_opt7
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# --------
+# MESSAGE:
+# --------
+# 01234567
+# 02468ace
+# 048d159c
+# 091a2b38
+# 12345670
+# 2468ace0
+# 48d159c0
+# 91a2b380
+# 23456701
+# 468ace02
+# 8d159c04
+# 1a2b3809
+# 34567012
+# 68ace024
+# d159c048
+# a2b38091
+# 45670123
+# 8ace0246
+# 159c048d
+# 00000000
+# ***************************
+# 
+# ---------------------
+# COMPARE HASH RESULTS:
+# ---------------------
+# Correct H[0] = bdd2fbd9	Your H[0] = xxxxxxxx	ERROR
+# Correct H[1] = 42623974	Your H[1] = xxxxxxxx	ERROR
+# Correct H[2] = bf129635	Your H[2] = xxxxxxxx	ERROR
+# Correct H[3] = 937c5107	Your H[3] = xxxxxxxx	ERROR
+# Correct H[4] = f09b6e9e	Your H[4] = xxxxxxxx	ERROR
+# Correct H[5] = 708eb28b	Your H[5] = xxxxxxxx	ERROR
+# Correct H[6] = 0318d121	Your H[6] = xxxxxxxx	ERROR
+# Correct H[7] = 85eca921	Your H[7] = xxxxxxxx	ERROR
+# ***************************
+# 
+# ERROR!  8 hash results are wrong!
+# 
+# Total number of cycles:         151
+# 
+# 
+# ***************************
+# 
+# ** Note: $stop    : E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/tb_simplified_sha256.sv(262)
+#    Time: 3070 ps  Iteration: 2  Instance: /tb_simplified_sha256
+# Break in Module tb_simplified_sha256 at E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/tb_simplified_sha256.sv line 262
+add wave -position end  sim:/tb_simplified_sha256/simplified_sha256_inst/message
+add wave -position end  sim:/tb_simplified_sha256/simplified_sha256_inst/wt
+restart
+run
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+# --------
+# MESSAGE:
+# --------
+# 01234567
+# 02468ace
+# 048d159c
+# 091a2b38
+# 12345670
+# 2468ace0
+# 48d159c0
+# 91a2b380
+# 23456701
+# 468ace02
+# 8d159c04
+# 1a2b3809
+# 34567012
+# 68ace024
+# d159c048
+# a2b38091
+# 45670123
+# 8ace0246
+# 159c048d
+# 00000000
+# ***************************
+# 
+# ---------------------
+# COMPARE HASH RESULTS:
+# ---------------------
+# Correct H[0] = bdd2fbd9	Your H[0] = xxxxxxxx	ERROR
+# Correct H[1] = 42623974	Your H[1] = xxxxxxxx	ERROR
+# Correct H[2] = bf129635	Your H[2] = xxxxxxxx	ERROR
+# Correct H[3] = 937c5107	Your H[3] = xxxxxxxx	ERROR
+# Correct H[4] = f09b6e9e	Your H[4] = xxxxxxxx	ERROR
+# Correct H[5] = 708eb28b	Your H[5] = xxxxxxxx	ERROR
+# Correct H[6] = 0318d121	Your H[6] = xxxxxxxx	ERROR
+# Correct H[7] = 85eca921	Your H[7] = xxxxxxxx	ERROR
+# ***************************
+# 
+# ERROR!  8 hash results are wrong!
+# 
+# Total number of cycles:         151
+# 
+# 
+# ***************************
+# 
+# ** Note: $stop    : E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/tb_simplified_sha256.sv(262)
+#    Time: 3070 ps  Iteration: 2  Instance: /tb_simplified_sha256
+# Break in Module tb_simplified_sha256 at E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/tb_simplified_sha256.sv line 262
+add wave -position 33  sim:/tb_simplified_sha256/simplified_sha256_inst/offset
+restart
+run
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+# --------
+# MESSAGE:
+# --------
+# 01234567
+# 02468ace
+# 048d159c
+# 091a2b38
+# 12345670
+# 2468ace0
+# 48d159c0
+# 91a2b380
+# 23456701
+# 468ace02
+# 8d159c04
+# 1a2b3809
+# 34567012
+# 68ace024
+# d159c048
+# a2b38091
+# 45670123
+# 8ace0246
+# 159c048d
+# 00000000
+# ***************************
+# 
+# ---------------------
+# COMPARE HASH RESULTS:
+# ---------------------
+# Correct H[0] = bdd2fbd9	Your H[0] = xxxxxxxx	ERROR
+# Correct H[1] = 42623974	Your H[1] = xxxxxxxx	ERROR
+# Correct H[2] = bf129635	Your H[2] = xxxxxxxx	ERROR
+# Correct H[3] = 937c5107	Your H[3] = xxxxxxxx	ERROR
+# Correct H[4] = f09b6e9e	Your H[4] = xxxxxxxx	ERROR
+# Correct H[5] = 708eb28b	Your H[5] = xxxxxxxx	ERROR
+# Correct H[6] = 0318d121	Your H[6] = xxxxxxxx	ERROR
+# Correct H[7] = 85eca921	Your H[7] = xxxxxxxx	ERROR
+# ***************************
+# 
+# ERROR!  8 hash results are wrong!
+# 
+# Total number of cycles:         151
+# 
+# 
+# ***************************
+# 
+# ** Note: $stop    : E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/tb_simplified_sha256.sv(262)
+#    Time: 3070 ps  Iteration: 2  Instance: /tb_simplified_sha256
+# Break in Module tb_simplified_sha256 at E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/tb_simplified_sha256.sv line 262
+vlog -reportprogress 300 -work work E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/simplified_sha256_opt7.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:19:58 on Jun 08,2024
+# vlog -reportprogress 300 -work work E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/simplified_sha256_opt7.sv 
+# -- Compiling module simplified_sha256_opt7
+# 
+# Top level modules:
+# 	simplified_sha256_opt7
+# End time: 12:19:58 on Jun 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.simplified_sha256_opt7
+run
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+# --------
+# MESSAGE:
+# --------
+# 01234567
+# 02468ace
+# 048d159c
+# 091a2b38
+# 12345670
+# 2468ace0
+# 48d159c0
+# 91a2b380
+# 23456701
+# 468ace02
+# 8d159c04
+# 1a2b3809
+# 34567012
+# 68ace024
+# d159c048
+# a2b38091
+# 45670123
+# 8ace0246
+# 159c048d
+# 00000000
+# ***************************
+# 
+# ---------------------
+# COMPARE HASH RESULTS:
+# ---------------------
+# Correct H[0] = bdd2fbd9	Your H[0] = 751d7356	ERROR
+# Correct H[1] = 42623974	Your H[1] = 7f222926	ERROR
+# Correct H[2] = bf129635	Your H[2] = 2c66beac	ERROR
+# Correct H[3] = 937c5107	Your H[3] = 94c4ec32	ERROR
+# Correct H[4] = f09b6e9e	Your H[4] = 5c1d3237	ERROR
+# Correct H[5] = 708eb28b	Your H[5] = 42f03128	ERROR
+# Correct H[6] = 0318d121	Your H[6] = 8590fe6b	ERROR
+# Correct H[7] = 85eca921	Your H[7] = f7f6e0c3	ERROR
+# ***************************
+# 
+# ERROR!  8 hash results are wrong!
+# 
+# Total number of cycles:         151
+# 
+# 
+# ***************************
+# 
+# ** Note: $stop    : E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/tb_simplified_sha256.sv(262)
+#    Time: 3070 ps  Iteration: 2  Instance: /tb_simplified_sha256
+# Break in Module tb_simplified_sha256 at E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/tb_simplified_sha256.sv line 262
+vlog -reportprogress 300 -work work E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/simplified_sha256_opt7.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:22:16 on Jun 08,2024
+# vlog -reportprogress 300 -work work E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/simplified_sha256_opt7.sv 
+# -- Compiling module simplified_sha256_opt7
+# 
+# Top level modules:
+# 	simplified_sha256_opt7
+# End time: 12:22:17 on Jun 08,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# Loading work.simplified_sha256_opt7
+run
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+# --------
+# MESSAGE:
+# --------
+# 01234567
+# 02468ace
+# 048d159c
+# 091a2b38
+# 12345670
+# 2468ace0
+# 48d159c0
+# 91a2b380
+# 23456701
+# 468ace02
+# 8d159c04
+# 1a2b3809
+# 34567012
+# 68ace024
+# d159c048
+# a2b38091
+# 45670123
+# 8ace0246
+# 159c048d
+# 00000000
+# ***************************
+# 
+# ---------------------
+# COMPARE HASH RESULTS:
+# ---------------------
+# Correct H[0] = bdd2fbd9	Your H[0] = 751d7356	ERROR
+# Correct H[1] = 42623974	Your H[1] = 7f222926	ERROR
+# Correct H[2] = bf129635	Your H[2] = 2c66beac	ERROR
+# Correct H[3] = 937c5107	Your H[3] = 94c4ec32	ERROR
+# Correct H[4] = f09b6e9e	Your H[4] = 5c1d3237	ERROR
+# Correct H[5] = 708eb28b	Your H[5] = 42f03128	ERROR
+# Correct H[6] = 0318d121	Your H[6] = 8590fe6b	ERROR
+# Correct H[7] = 85eca921	Your H[7] = f7f6e0c3	ERROR
+# ***************************
+# 
+# ERROR!  8 hash results are wrong!
+# 
+# Total number of cycles:         152
+# 
+# 
+# ***************************
+# 
+# ** Note: $stop    : E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/tb_simplified_sha256.sv(262)
+#    Time: 3090 ps  Iteration: 2  Instance: /tb_simplified_sha256
+# Break in Module tb_simplified_sha256 at E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/tb_simplified_sha256.sv line 262
+vlog -reportprogress 300 -work work E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/simplified_sha256_opt7.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:27:00 on Jun 08,2024
+# vlog -reportprogress 300 -work work E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/simplified_sha256_opt7.sv 
+# -- Compiling module simplified_sha256_opt7
+# 
+# Top level modules:
+# 	simplified_sha256_opt7
+# End time: 12:27:01 on Jun 08,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# Loading work.simplified_sha256_opt7
+run
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+# --------
+# MESSAGE:
+# --------
+# 01234567
+# 02468ace
+# 048d159c
+# 091a2b38
+# 12345670
+# 2468ace0
+# 48d159c0
+# 91a2b380
+# 23456701
+# 468ace02
+# 8d159c04
+# 1a2b3809
+# 34567012
+# 68ace024
+# d159c048
+# a2b38091
+# 45670123
+# 8ace0246
+# 159c048d
+# 00000000
+# ***************************
+# 
+# ---------------------
+# COMPARE HASH RESULTS:
+# ---------------------
+# Correct H[0] = bdd2fbd9	Your H[0] = 751d7356	ERROR
+# Correct H[1] = 42623974	Your H[1] = 7f222926	ERROR
+# Correct H[2] = bf129635	Your H[2] = 2c66beac	ERROR
+# Correct H[3] = 937c5107	Your H[3] = 94c4ec32	ERROR
+# Correct H[4] = f09b6e9e	Your H[4] = 5c1d3237	ERROR
+# Correct H[5] = 708eb28b	Your H[5] = 42f03128	ERROR
+# Correct H[6] = 0318d121	Your H[6] = 8590fe6b	ERROR
+# Correct H[7] = 85eca921	Your H[7] = f7f6e0c3	ERROR
+# ***************************
+# 
+# ERROR!  8 hash results are wrong!
+# 
+# Total number of cycles:         150
+# 
+# 
+# ***************************
+# 
+# ** Note: $stop    : E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/tb_simplified_sha256.sv(262)
+#    Time: 3050 ps  Iteration: 2  Instance: /tb_simplified_sha256
+# Break in Module tb_simplified_sha256 at E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/tb_simplified_sha256.sv line 262
+add wave -position 12  sim:/tb_simplified_sha256/simplified_sha256_inst/state
+restart
+run
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+# --------
+# MESSAGE:
+# --------
+# 01234567
+# 02468ace
+# 048d159c
+# 091a2b38
+# 12345670
+# 2468ace0
+# 48d159c0
+# 91a2b380
+# 23456701
+# 468ace02
+# 8d159c04
+# 1a2b3809
+# 34567012
+# 68ace024
+# d159c048
+# a2b38091
+# 45670123
+# 8ace0246
+# 159c048d
+# 00000000
+# ***************************
+# 
+# ---------------------
+# COMPARE HASH RESULTS:
+# ---------------------
+# Correct H[0] = bdd2fbd9	Your H[0] = 751d7356	ERROR
+# Correct H[1] = 42623974	Your H[1] = 7f222926	ERROR
+# Correct H[2] = bf129635	Your H[2] = 2c66beac	ERROR
+# Correct H[3] = 937c5107	Your H[3] = 94c4ec32	ERROR
+# Correct H[4] = f09b6e9e	Your H[4] = 5c1d3237	ERROR
+# Correct H[5] = 708eb28b	Your H[5] = 42f03128	ERROR
+# Correct H[6] = 0318d121	Your H[6] = 8590fe6b	ERROR
+# Correct H[7] = 85eca921	Your H[7] = f7f6e0c3	ERROR
+# ***************************
+# 
+# ERROR!  8 hash results are wrong!
+# 
+# Total number of cycles:         150
+# 
+# 
+# ***************************
+# 
+# ** Note: $stop    : E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/tb_simplified_sha256.sv(262)
+#    Time: 3050 ps  Iteration: 2  Instance: /tb_simplified_sha256
+# Break in Module tb_simplified_sha256 at E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/tb_simplified_sha256.sv line 262
+# A time value could not be extracted from the current line
+add wave -position insertpoint  \
+sim:/tb_simplified_sha256/simplified_sha256_inst/h0 \
+sim:/tb_simplified_sha256/simplified_sha256_inst/h1 \
+sim:/tb_simplified_sha256/simplified_sha256_inst/h2 \
+sim:/tb_simplified_sha256/simplified_sha256_inst/h3 \
+sim:/tb_simplified_sha256/simplified_sha256_inst/h4 \
+sim:/tb_simplified_sha256/simplified_sha256_inst/h5 \
+sim:/tb_simplified_sha256/simplified_sha256_inst/h6 \
+sim:/tb_simplified_sha256/simplified_sha256_inst/h7
+restart
+run
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+# --------
+# MESSAGE:
+# --------
+# 01234567
+# 02468ace
+# 048d159c
+# 091a2b38
+# 12345670
+# 2468ace0
+# 48d159c0
+# 91a2b380
+# 23456701
+# 468ace02
+# 8d159c04
+# 1a2b3809
+# 34567012
+# 68ace024
+# d159c048
+# a2b38091
+# 45670123
+# 8ace0246
+# 159c048d
+# 00000000
+# ***************************
+# 
+# ---------------------
+# COMPARE HASH RESULTS:
+# ---------------------
+# Correct H[0] = bdd2fbd9	Your H[0] = 751d7356	ERROR
+# Correct H[1] = 42623974	Your H[1] = 7f222926	ERROR
+# Correct H[2] = bf129635	Your H[2] = 2c66beac	ERROR
+# Correct H[3] = 937c5107	Your H[3] = 94c4ec32	ERROR
+# Correct H[4] = f09b6e9e	Your H[4] = 5c1d3237	ERROR
+# Correct H[5] = 708eb28b	Your H[5] = 42f03128	ERROR
+# Correct H[6] = 0318d121	Your H[6] = 8590fe6b	ERROR
+# Correct H[7] = 85eca921	Your H[7] = f7f6e0c3	ERROR
+# ***************************
+# 
+# ERROR!  8 hash results are wrong!
+# 
+# Total number of cycles:         150
+# 
+# 
+# ***************************
+# 
+# ** Note: $stop    : E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/tb_simplified_sha256.sv(262)
+#    Time: 3050 ps  Iteration: 2  Instance: /tb_simplified_sha256
+# Break in Module tb_simplified_sha256 at E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/tb_simplified_sha256.sv line 262
+add wave -position end  sim:/tb_simplified_sha256/simplified_sha256_inst/j
+restart
+run
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+# --------
+# MESSAGE:
+# --------
+# 01234567
+# 02468ace
+# 048d159c
+# 091a2b38
+# 12345670
+# 2468ace0
+# 48d159c0
+# 91a2b380
+# 23456701
+# 468ace02
+# 8d159c04
+# 1a2b3809
+# 34567012
+# 68ace024
+# d159c048
+# a2b38091
+# 45670123
+# 8ace0246
+# 159c048d
+# 00000000
+# ***************************
+# 
+# ---------------------
+# COMPARE HASH RESULTS:
+# ---------------------
+# Correct H[0] = bdd2fbd9	Your H[0] = 751d7356	ERROR
+# Correct H[1] = 42623974	Your H[1] = 7f222926	ERROR
+# Correct H[2] = bf129635	Your H[2] = 2c66beac	ERROR
+# Correct H[3] = 937c5107	Your H[3] = 94c4ec32	ERROR
+# Correct H[4] = f09b6e9e	Your H[4] = 5c1d3237	ERROR
+# Correct H[5] = 708eb28b	Your H[5] = 42f03128	ERROR
+# Correct H[6] = 0318d121	Your H[6] = 8590fe6b	ERROR
+# Correct H[7] = 85eca921	Your H[7] = f7f6e0c3	ERROR
+# ***************************
+# 
+# ERROR!  8 hash results are wrong!
+# 
+# Total number of cycles:         150
+# 
+# 
+# ***************************
+# 
+# ** Note: $stop    : E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/tb_simplified_sha256.sv(262)
+#    Time: 3050 ps  Iteration: 2  Instance: /tb_simplified_sha256
+# Break in Module tb_simplified_sha256 at E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/tb_simplified_sha256.sv line 262
+vlog -reportprogress 300 -work work E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/simplified_sha256_opt7.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:41:50 on Jun 08,2024
+# vlog -reportprogress 300 -work work E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/simplified_sha256_opt7.sv 
+# -- Compiling module simplified_sha256_opt7
+# 
+# Top level modules:
+# 	simplified_sha256_opt7
+# End time: 12:41:51 on Jun 08,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# Loading work.simplified_sha256_opt7
+run
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+# --------
+# MESSAGE:
+# --------
+# 01234567
+# 02468ace
+# 048d159c
+# 091a2b38
+# 12345670
+# 2468ace0
+# 48d159c0
+# 91a2b380
+# 23456701
+# 468ace02
+# 8d159c04
+# 1a2b3809
+# 34567012
+# 68ace024
+# d159c048
+# a2b38091
+# 45670123
+# 8ace0246
+# 159c048d
+# 00000000
+# ***************************
+# 
+# ---------------------
+# COMPARE HASH RESULTS:
+# ---------------------
+# Correct H[0] = bdd2fbd9	Your H[0] = bdd2fbd9
+# Correct H[1] = 42623974	Your H[1] = 42623974
+# Correct H[2] = bf129635	Your H[2] = bf129635
+# Correct H[3] = 937c5107	Your H[3] = 937c5107
+# Correct H[4] = f09b6e9e	Your H[4] = f09b6e9e
+# Correct H[5] = 708eb28b	Your H[5] = 708eb28b
+# Correct H[6] = 0318d121	Your H[6] = 0318d121
+# Correct H[7] = 85eca921	Your H[7] = 85eca921
+# ***************************
+# 
+# CONGRATULATIONS! All your hash results are correct!
+# 
+# Total number of cycles:         150
+# 
+# 
+# ***************************
+# 
+# ** Note: $stop    : E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/tb_simplified_sha256.sv(262)
+#    Time: 3050 ps  Iteration: 2  Instance: /tb_simplified_sha256
+# Break in Module tb_simplified_sha256 at E:/QuartusLite/projects/ece111/project/simplified_sha256_opt1/tb_simplified_sha256.sv line 262
+# End time: 12:49:17 on Jun 08,2024, Elapsed time: 0:34:36
+# Errors: 0, Warnings: 0
